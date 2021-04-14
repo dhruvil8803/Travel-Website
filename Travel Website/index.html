@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, intitial-scale=1.0">
+	<script src="https://kit.fontawesome.com/8ef32c9049.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!-- ##################Navbar##################### -->
+<nav class="navbar">
+	<div class="container">
+	<input type="checkbox">
+	<div class="linecontainer">
+		<span class="line1"></span>
+		<span class="line2"></span>
+		<span class="line3"></span>
+	</div>
+	<div class="navimg">
+		<img src="./logo1.png">
+	</div>
+	<div class="navtext">
+		<ul class="list">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#services">Services</a></li>
+			<li><a href="#places">PLACES</a></li>
+			<li><a href="#booknow">BOOK NOW</a></li>
+		</ul>
+	</div>
+</div>
+</nav>
+<!-- #######################Section########################## -->
+<section class="mainsection" id="home">
+	<div class="maintext">
+		<h1 class="heading">TRAVEL THE WORLD</h1>
+		<p>Trvel the world with us and get best experience of travelling.</p>
+		<a class="btn" href="#home">MORE</a>
+	</div>
+</section>
+<!-- ######################ShowCase##################### -->
+<section class="showcase" id="services">
+	<div class="showcontainer">
+		<div class="imgcontainer">
+			<img src="./bus.jpg">
+		</div>
+		<div class="textcontainer">
+		<h2 class="heading2">BUS</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi non arcu risus quis varius quam quisque. Facilisis leo vel fringilla est ullamcorper eget. Viverra adipiscing at in tellus. Pulvinar pellentesque habitant morbi tristique senectus et. Aliquet porttitor lacus luctus accumsan tortor posuere.</p></div>
+	</div>
+	<div class="showcontainer">
+		<div class="imgcontainer">
+			<img src="car.jpg">
+		</div>
+        <div class="textcontainer">
+		<h2 class="heading2">CAR</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi non arcu risus quis varius quam quisque. Facilisis leo vel fringilla est ullamcorper eget. Viverra adipiscing at in tellus. Pulvinar pellentesque habitant morbi tristique senectus et. Aliquet porttitor lacus luctus accumsan tortor posuere.</p></div>
+	</div>
+	<div class="showcontainer">
+		<div class="imgcontainer">
+			<img src="aeroplane.jpg">
+		</div>
+         <div class="textcontainer">
+		<h2 class="heading2">FLIGHT</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi non arcu risus quis varius quam quisque. Facilisis leo vel fringilla est ullamcorper eget. Viverra adipiscing at in tellus. Pulvinar pellentesque habitant morbi tristique senectus et. Aliquet porttitor lacus luctus accumsan tortor posuere.</p></div>
+	</div>
+</section>
+<!-- #################Showdown section################# -->
+<section class="showdown" id="places">
+	<h2 class="heading2">PLACES VISTIED</h2>
+	<div class="ss">
+	<div class="imgshowdown">
+		<img src="./statueofunity.jpg">
+		<div class="slider">
+		<h3 class="heading3">Statue of Unity</h3>
+		<a class="btn" href="#">EXPLORE</a></div>
+	</div>
+	<div class="imgshowdown">
+		<img src="./disneyland.jpg">
+		<div class="slider">
+		<h3 class="heading3">Disney Land</h3>
+		<a class="btn" href="#">EXPLORE</a></div>
+	</div>
+	<div class="imgshowdown">
+		<img src="./tajmahal.jpg">
+		<div class="slider">
+		<h3 class="heading3">Taj Mahal</h3>
+		<a class="btn" href="#">EXPLORE</a></div>
+	</div>
+	<div class="imgshowdown">
+		<img src="./paris.jpg">
+		<div class="slider">
+		<h3 class="heading3">Paris</h3>
+		<a class="btn" href="#">EXPLORE</a></div>
+	</div>
+	<div class="imgshowdown">
+		<img src="./lasvegas.jpg">
+		<div class="slider">
+		<h3 class="heading3">Vegas</h3>
+		<a class="btn" href="#">EXPLORE</a></div>
+	</div>
+	<div class="imgshowdown">
+		<img src="./bhujkhalifa.jpg">
+		<div class="slider">
+		<h3 class="heading3">Bhuj Khalifa</h3>
+		<a class="btn" href="#">EXPLORE</a></div>
+	</div></div>
+</section>
+<!-- #####################FORM################### -->
+<section class="contact" id="booknow">
+			<div class="contactimg">
+				<img src="./london.jpg">
+			</div>
+			<div class="form">
+				<h2 class= "heading2">BOOK NOW</h2>
+				<input type="text" name="" placeholder="Name">
+				<input type="tel" name="" placeholder="Contact No">
+				<input type="text" name="" placeholder="Place to Visit">
+				<input type="number" name="" placeholder="Total Person">
+				<textarea placeholder="Any Special Wish You Can Mention Over Here"></textarea>
+                 <a href="" class="btn">BOOK NOW</a>
+			</div>
+	</section>
+	<!-- #######################footer###################### -->
+	<footer>
+		<h2>Travelling Website &copy; All Right Reserved</h2>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    }
+  });
+});
+</script>
+</body>
+</html>
